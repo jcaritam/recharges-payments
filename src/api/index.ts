@@ -2,7 +2,7 @@ import axios from 'axios'
 import router from '../router'
 
 const apiRechargesPayments = axios.create({
-  baseURL: 'http://bun-burn-env.eba-ftyx2m3h.us-east-1.elasticbeanstalk.com'
+  baseURL: import.meta.env.VITE_URI_BACKEND,
 });
 
 apiRechargesPayments.interceptors.request.use(
