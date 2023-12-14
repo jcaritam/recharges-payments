@@ -7,12 +7,12 @@ const apiRechargesPayments = axios.create({
 
 apiRechargesPayments.interceptors.request.use(
   config => {
-    config.headers['Content-Type'] = 'application/json';
-    config.headers['Accept'] = 'application/json';
-    config.headers['Access-Control-Allow-Origin'] = '*';
-    config.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS';
-    config.headers['Access-Control-Allow-Headers'] = 'Origin, Content-Type, X-Auth-Token';
-    config.headers['Access-Control-Allow-Credentials'] = 'true';
+    // config.headers['Content-Type'] = 'application/json';
+    // config.headers['Accept'] = 'application/json';
+    // config.headers['Access-Control-Allow-Origin'] = '*';
+    // config.headers['Access-Control-Allow-Methods'] = 'GET, POST, PUT, DELETE, OPTIONS';
+    // config.headers['Access-Control-Allow-Headers'] = 'Origin, Content-Type, X-Auth-Token';
+    // config.headers['Access-Control-Allow-Credentials'] = 'true';
 
     const token = localStorage.getItem('token');
     console.log('token', token);
